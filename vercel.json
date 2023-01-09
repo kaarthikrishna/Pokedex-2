@@ -1,15 +1,12 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "./pages/index.js",
-      "use": "@vercel/.next"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/"
-    }
-  ]
+  "buildCommand": "next build"
+}
+{
+  "cleanUrls": true
+}
+{
+  "devCommand": "next dev"
+}
+{
+  "framework": "nextjs"
 }
