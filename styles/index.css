@@ -1,0 +1,209 @@
+@import url('https://fonts.g/oogleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+@tailwind base;
+
+:root{
+    --font:'Poppins', sans-serif;
+    --big-font-size:2rem;
+    --h1-font-size:1.5rem;
+    --h2-font-size:1.25rem;
+    --h3-font-size:1.125rem;
+    --normal-font-size:.938rem;
+    --small-font-size:.813rem;
+    --smaller-font-size:.75rem;
+    --font-medium:500;
+    --font-semi-bold:600;
+    --title-color:hsl(var(--hue-color), 8%, 15%);
+    --text-color-light:hsl(var(--hue-color), 8%, 65%);
+    --hue-color:250;
+    --body-color:#ecf0f3;
+    --text-color-light:hsl(var(--hue-color), 0%, 40%);
+}
+html{
+    background: #ecf0f3;
+}
+
+.homepage-wrapper {
+    
+    display: block;
+    margin: 0px auto;
+    height: 10vh;
+    margin-bottom: 9rem;
+    margin-top: 1rem;
+
+    
+
+ 
+
+  }
+.poke{
+    background-color: var(--body-color);
+    position: relative;
+    border-radius: 1.5rem;
+    box-shadow: inset 5px 5px 12px #ffff,
+                 5px 5px 12px rgba(0,0,0,.16);
+    transition: .3s;
+    margin-bottom: 3rem;
+    margin-right: 1rem;
+
+    
+}
+.poke:hover{
+    transform: scale(1.1);
+}
+  
+.main_div{
+    display: grid;
+    grid-template-columns: repeat(8,7fr);
+    grid-auto-rows: minmax(150px,auto);
+    grid-gap:10px;
+    margin-left: 1rem;
+    
+
+}
+@media(min-width:561px){
+    .main_div{
+   
+    grid-template-columns: repeat(2,1fr);
+ 
+    }
+}
+
+.poke_img{
+    width: 200px;
+    height: 200px;
+
+    
+}
+.text{
+    color: rgb(0, 0, 0);
+    padding-bottom: 70px;
+    text-align: center;
+    font-family: var(--font);
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 19px;
+    text-decoration: none;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    font-family: var(--font);
+    text-transform: capitalize;
+    font-size: 3rem;
+    text-decoration: underline;
+    color: #6b7280;
+}
+.image{
+    margin-left: 10%;
+    margin-top: 3%;
+
+}
+.details{
+    margin-left: 45%;
+    margin-top: -11rem;
+    font-family: var(--font);
+    font-size: large;
+    color: var(--text-color-light);
+}
+.home{
+    margin-left: 28%;
+    margin-top: 2rem;
+    font-family: var(--font);
+    border-color: #6b7280;
+    padding-bottom: 0.6rem;
+    color: #6b7280;
+    
+}
+.home:hover{
+    color: black;
+}
+.main{
+    background-color: var(--body-color);
+ 
+    border-radius: 1.5rem;
+    box-shadow: inset 5px 5px 12px #ffff,
+                 5px 5px 12px rgba(0,0,0,.16);
+    transition: .3s;
+    margin-left: 25%;
+    width: 50rem;
+    margin-top: -rem;
+}
+.logo{
+    
+    display: block;
+    margin: 0px auto;
+    height: 10vh;
+    margin-top: 2%;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5rem;
+    margin-bottom: 5rem;
+    font-family: 'Courier New', Courier, monospace;
+    
+    
+}
+.input{
+    width: 40rem;
+    border-radius: 1.5rem;
+    box-shadow: inset 5px 5px 12px #ffff,
+                 5px 5px 12px rgba(0,0,0,.16);
+    height: 2rem;
+}
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    margin-bottom: 4rem;
+    margin-top: -2rem;
+    
+
+}
+.option{
+    width: 20rem;
+    background-color: #ffff;
+    height: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: inset 5px 5px 12px #ffff,
+                 5px 5px 12px rgba(0,0,0,.16);
+   text-align: center;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.label{
+    margin-right: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:560px){
+    .main_div{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .input{
+        width: 15rem;
+    }
+    .option{
+        width: 10rem;
+        
+    }
+}
+@media (min-width:960px){
+    .main_div{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media(min-width:1500px){
+    .main_div{
+        grid-template-columns: repeat(8,1fr);
+    }
+}
